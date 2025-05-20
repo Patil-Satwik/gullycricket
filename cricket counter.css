@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 10px;
+  }
+  
+  .setup, .scoreboard, .buttons {
+    margin: 20px auto;
+    max-width: 600px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  
+  input {
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #2196F3;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #0b7dda;
+  }
+  
+  .score-container {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+  
+  .active {
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 10px;
+  }

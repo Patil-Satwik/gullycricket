@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gully Cricket Scoreboard</title>
+  <link rel="stylesheet" href="cricket counter.css">
+</head>
+<body>
+
+  <div class="setup">
+    <h2>Gully Cricket Match Setup</h2>
+    <label>Overs: <input type="number" id="overs" min="1" max="20" value="2"></label>
+    <label>Wickets: <input type="number" id="wickets" min="1" max="11" value="2"></label>
+    <br><br>
+    <button onclick="startMatch()">Start Match</button>
+  </div>
+
+  <div class="scoreboard" style="display:none;">
+    <h2>Scoreboard</h2>
+    <div class="score-container">
+      <div id="teamA" class="active">
+        <h3>Team A</h3>
+        <p id="scoreA">0 / 0</p>
+        <p id="ballsA">Balls: 0</p>
+        <p id="oversA">Overs: 0</p>
+      </div>
+      <div id="teamB">
+        <h3>Team B</h3>
+        <p id="scoreB">0 / 0</p>
+        <p id="ballsB">Balls: 0</p>
+        <p id="oversB">Overs: 0</p>
+      </div>
+    </div>
+    <br>
+    <button onclick="switchTeam()">Switch Innings</button>
+  </div>
+
+  <div class="buttons" style="display:none;">
+    <h2>Controls</h2>
+    <button onclick="addRun(1)">1 Run</button>
+    <button onclick="addRun(2)">2 Runs</button>
+    <button onclick="addRun(4)">4 Runs</button>
+    <button onclick="noBall()">No Ball</button>
+    <button onclick="wideBall()">Wide Ball</button>
+    <button onclick="dotBall()">Dot Ball</button>
+    <button onclick="wicket()">OUT</button>
+    <button onclick="undo()">Back</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
